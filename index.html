@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="container clear-fix">
+    <header class="container space-below main-header">
+      <div class="clearfix space-above space-below">
           <h1>Student Name</h1>
           <nav class="main-nav">
             <ul>
@@ -20,71 +21,67 @@
             </ul>
           </nav>
         </div>
-        <div class="container clear-fix profile-img-container">
+        <div class="profile clearfix">
           <img src="images/responsive-layout-profile.png" alt="main profile image" class="profile-img">
           <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
       </header>
       
-      <main class="desktop-containter">
-        <section id="portfolio" class="portfolio">
-          <h2>PORTFOLIO</h2>
-          <div class="project-container">
-            <article class="project-card">
-              <img src="images/portfolio-1.png" alt="project image one">
-              <h3>Marketing Page</h3>
-              <p>This Project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-            </article>
-            
-            <article class="project-card">
-              <img src="images/portfolio-2.png" alt="project image two">
-              <h3>Search Page</h3>
-              <p>This Project searches through a specific database to find information that the user is trying to look up.</p>
-            </article>
-            
-            <article class="project-card">
-              <img src="images/portfolio-3.png" alt="project image three">
-              <h3>Travel App</h3>
-              <p>This project compares travel times based on a different transportation methods and tells you the best one.</p>
-            </article>
-            
-            <article class="project-card">
-              <img src="images/portfolio-4.png" alt="project image four">
-              <h3>Map of Favorite Spots</h3>
-              <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            </article>
-            
-            <article class="project-card">
-              <img src="images/portfolio-5.png" alt="project image five">
-              <h3>Photo Gallery</h3>
-              <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-            </article>
-            
-            <article class="project-card">
-              <img src="images/portfolio-6.png" alt="project image six">
-              <h3>Calculator</h3>
-              <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
-            </article>
-          </div>
+      <main>
+        <section id="portfolio" class="portfolio space-above space-below">
+          <h2 class="space-below">PORTFOLIO</h2>
+          <article class="project-card">
+            <img src="images/portfolio-1.png" alt="project image one">
+            <h3>Marketing Page</h3>
+            <p>This Project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          </article>
+          
+          <article class="project-card">
+            <img src="images/portfolio-2.png" alt="project image two">
+            <h3>Search Page</h3>
+            <p>This Project searches through a specific database to find information that the user is trying to look up.</p>
+          </article>
+          
+          <article class="project-card">
+            <img src="images/portfolio-3.png" alt="project image three">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </article>
+          
+          <article class="project-card">
+            <img src="images/portfolio-4.png" alt="project image four">
+            <h3>Map of Favorite Spots</h3>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </article>
+          
+          <article class="project-card">
+            <img src="images/portfolio-5.png" alt="project image five">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </article>
+          
+          <article class="project-card">
+            <img src="images/portfolio-6.png" alt="project image six">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
+          </article>
         </section>
       
-        <section id="contact">
-          <div class="contact-container">
-            <h2>CONTACT</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <address>
-              <p>Phone <strong>+1(111)555-1234</strong></p>
-              <p>Email <strong><a href="mailto:email@yoursite.com">email@yoursite.com</a></strong></p>
-            </address>
-          </div>
+        <section id="contact" class="contact container space-above space-below">
+          <h2 class="space-below">CONTACT</h2>
+          <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          <address>
+            <p>Phone <a href="tel:1-111-555-1234">+1(111)555-1234</a></p>
+            <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+          </address>
         </section>
       </main>
     
-      <footer>
-        <nav class="footer-nav container clear-fix">
-          <div class="footer-name">Student name</div>
-          <div class="footer-mobile-link"><a href="#">BACK TO TOP</a></div>
-          <ul class="footer-desktop-links">
+      <footer class="container">
+        <nav class="footer-nav clearfix">
+          <div class="footer-name float-left">Student Name</div>
+          <a href="#" class="mobile-footer-nav float-right">BACK TO TOP</a>
+          <ul class="desktop-footer-nav float-right">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#contact">CONTACT</a></li>
@@ -101,6 +98,9 @@
 
 
 
+
+
+  
 
 
 
