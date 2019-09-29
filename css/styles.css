@@ -62,12 +62,9 @@ body {
 }
 
 .portfolio,
-.skills {
-  background-color: #fff;
-}
-
+.skills,
 .main-nav a:active {
-  background-color: #fff;
+  background-color: #ffffe6;
 }
 
 .footer-nav {
